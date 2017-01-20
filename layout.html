@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hangman Game</title>
+	<!-- Bootstrap CDN -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+
+   	<div class="container">
+
+		<div class="jumbotron">
+			  <h1>OMG!!! Hangman Game Rd II</h1>
+			  <p>Guess the student from our class!</p>
+		</div>	
+
+		
+		<div class="panel panel-default">
+			  <div class="panel-heading">Word to Guess</div>
+			  <div class="panel-body">
+			  	<span id="wordToGuess">_ _ _ _ _ _ _ </span>  <!-- because I used div tag instead of span tag ** [tip] span tag usually contain some texts  -->
+			  </div>
+		</div>
+
+		<div class="panel panel-default">
+			  <div class="panel-body">
+		   	    	Wrong Guesses: <span id="wrongGuesses"></span>
+		      </div>
+		 </div>
+		
+		<div class="panel panel-default">
+			  <div class="panel-body">
+		   	    	Guesses Left: <span id="numGuesses">9</span>
+		      </div>
+		 </div>	
+			
+		<div class="panel panel-default">
+			  <div class="panel-body">
+		   	    	Win Counter: <span id="winCounter">0</span>
+		      </div>
+		 </div>
+
+		<div class="panel panel-default">
+			  <div class="panel-body">
+		   	    	Loss Counter: <span id="lossCounter">0</span>
+		      </div>
+		 </div>		 			
+
+	</div>
+
+
+	<!-- link to Javascript -->
+	<script type="text/javascript" src="logic.js"></script>
+
+
+</body>
+</html>
